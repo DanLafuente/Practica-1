@@ -8,15 +8,24 @@
 <body>
     <h1>Formulario de contacto</h1>
     <p>Nombre: </p>
+    <input type="text" name="nombre" value="Nombre"/>
     <p>Dirección de correo: </p>
+    <input type="text" name="correo" value="Email"/>
     <p>Motivo de consulta: </p>
-       /*botones*/ 
-       <p>Evaluación</p>
-       <p>Sugerencias</p>
-       <p>Críticas</p>
+       /*de momento no se que tienen que hacer asi que se quedan como botón genérico*/ 
+       <button type="Evaluación">Evaluación</button>
+       <button type="Sugerencias">Sugerencias</button>
+       <button type="Críticas">Críticas</button>
+
     /*checkbox*/
     <p>Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio</p>
-    /*cuadro de texto*/
-    <p>Escriba aquí su consulta</p>
+    /*cuadro de texto, el nombre asignado (Consulta) debe coincidir con el que se use en la app del servidor*/
+    <label for="Consulta">Escriba aquí su consulta</label>
+    <input id="Consulta" type="text" name="Consulta" value=""/>
+
+    /*enviar o borrar formulario*/
+    <input type="submit" name="enviar" value="Enviar formulario"/>
+    <input type="reset" name="borrar" value="Borrar formulario"/>
+    
 </body>
 </html>
